@@ -23,15 +23,15 @@
         </field>
     </record>
 
-    <record model="ir.ui.view" id="car_service_search_view">
+    <!--<record model="ir.ui.view" id="car_service_search_view">
         <field name="name">car_service.search (in car_service)</field>
         <field name="model">car_service</field>
         <field name="arch" type="xml">
             <search>
-                <!-- TODO -->
+                <!- TODO ->
             </search>
         </field>
-    </record>
+    </record>-->
 
     <record model="ir.ui.view" id="car_service_tree_view">
         <field name="name">car_service.tree (in car_service)</field>
@@ -52,11 +52,32 @@
         <field name="context">{}</field>
     </record>
 
-    <record model="ir.ui.menu" id="car_service_menu">
+    <!-- <record model="ir.ui.menu" id="car_service_menu">
         <field name="name">Car_service</field>
-        <field name="parent_id" ref="xmlid of parent menu"/> <!-- TODO -->
+        <field name="parent_id" ref="xmlid of parent menu"/> <!-/- TODO -/->
         <field name="action" ref="car_service_act_window"/>
-        <field name="sequence" eval="16"/> <!-- TODO -->
-    </record>
+        <field name="sequence" eval="16"/> <!-/- TODO -/->
+    </record>-->
+
+    <!-- Main Menu -->
+    <menuitem
+        id="car_service_root"
+        name="Car service"
+        sequence="10"
+        groups="base.group_manager"
+        web_icon="car_service,static/description/icon.png"
+    />
+
+    <menuitem id="car_service_dashboard" name="Dashboard" sequence="10" parent="car_service_root" />
+
+    <!-- Car Service Menu -->
+    <menuitem
+        id="menu_fsm_dash_team"
+        name="Car Service"
+        action="car_service_act_window"
+        parent="car_service_dashboard"
+        sequence="10"
+        groups="base.group_manager"
+    />
 
 </odoo>

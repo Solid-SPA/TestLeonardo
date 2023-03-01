@@ -1,4 +1,4 @@
-# Copyright 2023 Leo
+# Copyright 2023 Leonardo Caballero
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import _, api, fields, models
