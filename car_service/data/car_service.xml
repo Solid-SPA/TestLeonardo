@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="car_service01" model="car_service">
+        <field name="name">cambio de aceite y filtro</field>
+    </record>
+
+    <record id="car_service02" model="car_service">
+        <field name="name">test electrico</field>
+    </record>
+
+    <record id="car_service03" model="car_service">
+        <field name="name">cambio de bateria</field>
+    </record>
+
+</odoo>
