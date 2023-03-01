@@ -64,20 +64,18 @@
         id="car_service_root"
         name="Car service"
         sequence="10"
-        groups="base.group_manager"
-        web_icon="car_service,static/description/icon.png"
+        web_icon="car_service, static/description/icon.png"
     />
 
     <menuitem id="car_service_dashboard" name="Dashboard" sequence="10" parent="car_service_root" />
 
     <!-- Car Service Menu -->
     <menuitem
-        id="menu_fsm_dash_team"
+        id="menu_car_service"
         name="Car Service"
         action="car_service_act_window"
         parent="car_service_dashboard"
         sequence="10"
-        groups="base.group_manager"
     />
 
 </odoo>
